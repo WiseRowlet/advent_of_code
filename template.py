@@ -1,6 +1,6 @@
 from aocd import get_puzzle
 
-DAY = 2
+DAY = 1
 YEAR = 2023
 
 puzzle = get_puzzle(day=DAY, year=YEAR)
@@ -23,5 +23,9 @@ def part_b(input_data):
     pass
 
 
-print(part_a(puzzle_data))
-print(part_b(puzzle_data))
+print(example_input)
+print(parse_input(example_input))
+# print("Example Output A: ", part_a(example_input))
+# print("Example Output B: ", part_b(example_input))
+# print("Part A: ", part_a(puzzle_data))
+# print("Part B: ", part_b(puzzle_data))
