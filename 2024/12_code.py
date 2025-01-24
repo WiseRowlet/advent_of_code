@@ -132,6 +132,6 @@ def get_garden_cost(garden_map):
     )
 
 
-garden_map = get_input("Data/12_input.txt")
+garden_map = get_input("2024/Data/12_input.txt")
 
 print(get_garden_cost(garden_map))

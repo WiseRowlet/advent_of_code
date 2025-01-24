@@ -1,10 +1,10 @@
 import csv
 
-with open("Data/05_input_rules.txt", "r") as file:
+with open("2024/Data/05_input_rules.txt", "r") as file:
     rules = [tuple(map(int, line.split("|"))) for line in file]
 
 updates = []
-with open("Data/05_input.csv", mode="r") as file:
+with open("2024/Data/05_input.csv", mode="r") as file:
     reader = csv.reader(file)
     for row in reader:
         updates.append([int(value) for value in row])

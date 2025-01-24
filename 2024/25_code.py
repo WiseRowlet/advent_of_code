@@ -40,4 +40,4 @@ def part_one(file_path):
     return fits
 
 
-print(part_one("Data/25_input.txt"))
+print(part_one("2024/Data/25_input.txt"))

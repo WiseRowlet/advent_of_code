@@ -77,7 +77,7 @@ def count_x_word_in_grid(grid, xword):
 
 
 # Read the grid from the text file
-with open("Data/04_input.txt", "r") as file:
+with open("2024/Data/04_input.txt", "r") as file:
     grid = [list(line.strip()) for line in file]
 
 # Define the word to search for

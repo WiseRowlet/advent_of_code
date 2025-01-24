@@ -164,7 +164,7 @@ p=9,5 v=-3,-3
 """
 
 test_robots = parse_input(test_input)
-robots = get_input("Data/14_input.txt")
+robots = get_input("2024/Data/14_input.txt")
 time = 100
 min_pos = (0, 0)
 max_pos_test = (10, 6)
@@ -181,6 +181,6 @@ max_pos = (100, 102)
 #     print()
 
 safety_factor = get_safety_factor(robots, time, min_pos, max_pos)
-robots = get_input("Data/14_input.txt")
+robots = get_input("2024/Data/14_input.txt")
 num_seconds = get_tree(robots, min_pos, max_pos)
 print(safety_factor, num_seconds)

@@ -14,7 +14,7 @@ def is_sorted(lst):
 reports = []
 
 # Open the CSV file and read its contents
-with open("Data/02_input.csv", mode="r") as file:
+with open("2024/Data/02_input.csv", mode="r") as file:
     reader = csv.reader(file)
     for row in reader:
         reports.append([int(value) for value in row])

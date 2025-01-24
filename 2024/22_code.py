@@ -3,7 +3,7 @@ def get_input(file_path):
         return [int(line.strip()) for line in file]
 
 
-input = get_input("Data/22_input.txt")
+input = get_input("2024/Data/22_input.txt")
 test_input = [1, 10, 100, 2024]
 test_input_2 = [1, 2, 3, 2024]
 

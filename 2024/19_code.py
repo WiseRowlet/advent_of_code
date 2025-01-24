@@ -35,5 +35,5 @@ def count_possible_designs(file_path, count_designs=False):
     return count
 
 
-# print(count_possible_designs("Data/19_input.txt"))
-print(count_possible_designs("Data/19_input.txt", True))
+# print(count_possible_designs("2024/Data/19_input.txt"))
+print(count_possible_designs("2024/Data/19_input.txt", True))

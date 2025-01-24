@@ -46,7 +46,7 @@ Button B: X+27, Y+71
 Prize: X=18641, Y=10279"""
 
 test_machines = parse_input(test_input)
-arcade_machines = get_input("Data/13_input.txt")
+arcade_machines = get_input("2024/Data/13_input.txt")
 
 
 def press_button(position, arcade_machine, button):

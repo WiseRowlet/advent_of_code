@@ -151,8 +151,8 @@ def check_blockade(corrupted, width, height):
     return False
 
 
-corrupted = get_bytes("Data/18_input.txt")
-corrupted_test = get_bytes("Data/18_input_test.txt")
+corrupted = get_bytes("2024/Data/18_input.txt")
+corrupted_test = get_bytes("2024/Data/18_input_test.txt")
 
 # print(find_min_distance((0, 0), (6, 6), 6, corrupted_test, 12))
 # print(find_min_distance((0, 0), (70, 70), 70, corrupted, 1024))

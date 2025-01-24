@@ -67,6 +67,6 @@ trail_map = [
     "10456732",
 ]
 
-trail_map = get_input("Data/10_input.txt")
+trail_map = get_input("2024/Data/10_input.txt")
 trail_sum, trail_count = trail_sum(trail_map)
 print(trail_sum, trail_count)

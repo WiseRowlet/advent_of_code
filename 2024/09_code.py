@@ -78,7 +78,7 @@ def checksum_disk_map(disk_map, whole_file=False):
 
 disk_map = "2333133121414131402"
 
-disk_map = get_input("Data/09_input.txt")
+disk_map = get_input("2024/Data/09_input.txt")
 
 print(checksum_disk_map(disk_map, False))
 print(checksum_disk_map(disk_map, True))

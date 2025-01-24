@@ -90,9 +90,9 @@ def part_two(file_path):
     return ",".join(sorted(wrong))
 
 
-test_path = "Data/24_input_test.txt"
-test_path_2 = "Data/24_input_test_2.txt"
-path = "Data/24_input.txt"
+test_path = "2024/Data/24_input_test.txt"
+test_path_2 = "2024/Data/24_input_test_2.txt"
+path = "2024/Data/24_input.txt"
 
 print(part_one(path))
 print(part_two(path))

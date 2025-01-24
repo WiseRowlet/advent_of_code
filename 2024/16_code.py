@@ -187,7 +187,7 @@ test_maze = [
     "###############",
 ]
 maze = test_maze
-maze = get_input("Data/16_input.txt")
+maze = get_input("2024/Data/16_input.txt")
 predecessors, end = a_star_with_predecessors(maze)
 maze_score = a_star(maze)
 all_paths = reconstruct_all_paths(predecessors, end)

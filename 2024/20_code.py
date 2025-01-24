@@ -7,7 +7,7 @@ def get_input(file_path):
     return race_map
 
 
-data = get_input("Data/20_input.txt")
+data = get_input("2024/Data/20_input.txt")
 h, w = len(data), len(data[0])
 dirs = [(1, 0), (0, 1), (-1, 0), (0, -1)]
 

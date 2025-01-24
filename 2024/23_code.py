@@ -1,7 +1,7 @@
 from itertools import combinations
 
 computers, connections = set(), set()
-for line in open("Data/23_input.txt"):
+for line in open("2024/Data/23_input.txt"):
     a, b = line.strip().split("-")
     computers.update([a, b])
     connections.update([(a, b), (b, a)])

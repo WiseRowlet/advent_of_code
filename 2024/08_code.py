@@ -84,5 +84,5 @@ antenna_map = [
     "............",
 ]
 
-antenna_map = get_input("Data/08_input.txt")
+antenna_map = get_input("2024/Data/08_input.txt")
 print(count_unique_antinodes(antenna_map))

@@ -1,6 +1,6 @@
 import re
 
-with open("Data/03_input.txt", mode="r") as file:
+with open("2024/Data/03_input.txt", mode="r") as file:
     memory_string = file.read()
 
 

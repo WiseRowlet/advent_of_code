@@ -1,5 +1,5 @@
 def get_original_map():
-    with open("Data/06_input.txt", "r") as file:
+    with open("2024/Data/06_input.txt", "r") as file:
         lab_map = [list(line.strip()) for line in file]
     return lab_map
 
