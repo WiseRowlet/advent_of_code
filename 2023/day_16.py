@@ -104,7 +104,7 @@ def part_b(input_data):
     
     return charged
 
-print(example_input)
+# print(example_input)
 # print(parse_input(example_input))
 print("Example Output A: ", part_a(example_input), " Solution: ", part_a_example_solution)
 print("Example Output B: ", part_b(example_input), " Solution: ", part_b_example_solution)
