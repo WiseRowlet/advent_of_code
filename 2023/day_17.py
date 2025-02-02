@@ -29,7 +29,6 @@ def part_a(input_data, min_con = 1, max_con = 3):
     while pq:
         score, x, y, direction, con = heapq.heappop(pq)
         if (x, y) == end:
-            print(pq)
             return score
 
         if (x, y, direction, con) in visited:
