@@ -87,9 +87,9 @@ def part_b(input_data):
     return loads[rep_cycle_start + offset]
 
 
-print(example_input)
+# print(example_input)
 # print(parse_input(example_input))
-print("Example Output A: ", part_a(example_input))
-print("Example Output B: ", part_b(example_input))
+print("Example Output A: ", part_a(example_input), " Solution: ", part_a_example_solution)
+print("Example Output B: ", part_b(example_input), " Solution: ", part_b_example_solution)
 print("Part A: ", part_a(puzzle_data))
 print("Part B: ", part_b(puzzle_data))

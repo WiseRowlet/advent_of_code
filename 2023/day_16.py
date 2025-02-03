@@ -1,5 +1,6 @@
-from aocd import get_puzzle
 from collections import deque
+
+from aocd import get_puzzle
 
 DAY = 16
 YEAR = 2023
@@ -51,11 +52,12 @@ MIRROR_MAP = {
     },
 }
 
+
 def parse_input(input_data):
     return input_data.splitlines()
 
 
-def part_a(input_data, start=(0,0,"right")):
+def part_a(input_data, start=(0, 0, "right")):
     grid = parse_input(input_data)
     sx, sy, _ = start
     height = len(grid)
@@ -63,7 +65,7 @@ def part_a(input_data, start=(0,0,"right")):
     queue = deque([start])
     visited = set()
     loop_check = set()
-    visited.add((sx,sy))
+    visited.add((sx, sy))
     loop_check.add(start)
 
     while queue:
@@ -74,10 +76,10 @@ def part_a(input_data, start=(0,0,"right")):
                 dx, dy = DIRECTIONS[d]
                 nx, ny = x + dx, y + dy
                 if 0 <= nx < width and 0 <= ny < height:
-                    if (nx,ny,d) not in loop_check:
+                    if (nx, ny, d) not in loop_check:
                         visited.add((nx, ny))
-                        loop_check.add((nx,ny,d))
-                        queue.append((nx,ny,d))
+                        loop_check.add((nx, ny, d))
+                        queue.append((nx, ny, d))
     return len(visited)
 
 
@@ -91,18 +93,19 @@ def part_b(input_data):
         charge = part_a(input_data, (i, 0, "down"))
         if charge > charged:
             charged = charge
-        charge = part_a(input_data, (i, height-1, "up"))
+        charge = part_a(input_data, (i, height - 1, "up"))
         if charge > charged:
             charged = charge
     for i in range(height):
         charge = part_a(input_data, (0, i, "right"))
         if charge > charged:
             charged = charge
-        charge = part_a(input_data, (width-1, i, "left"))
+        charge = part_a(input_data, (width - 1, i, "left"))
         if charge > charged:
             charged = charge
-    
+
     return charged
+
 
 # print(example_input)
 # print(parse_input(example_input))

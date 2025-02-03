@@ -7,6 +7,10 @@ YEAR = 2023
 
 puzzle = get_puzzle(day=DAY, year=YEAR)
 puzzle_input = puzzle.input_data
+examples = puzzle.examples
+example_input = examples[0].input_data
+part_a_example_solution = examples[0].answer_a
+part_b_example_solution = examples[0].answer_b
 
 
 def part1(puzzle_input):
@@ -66,5 +70,8 @@ def part2(puzzle_input):
     return min_location
 
 
-print("Part 1:", part1(puzzle_input))
-print("Part 2:", part2(puzzle_input))
+# print(example_input)
+print("Example Output A: ", part1(example_input), " Solution: ", part_a_example_solution)
+print("Example Output B: ", part2(example_input), " Solution: ", part_b_example_solution)
+print("Part A: ", part1(puzzle_input))
+print("Part B: ", part2(puzzle_input))

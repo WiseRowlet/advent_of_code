@@ -76,6 +76,10 @@ def part_b(races):
 
 races_a = parse_input_a(puzzle_data)
 races_b = parse_input_b(puzzle_data)
-
-print(part_a(races_a))
-print(part_b(races_b))
+races_a_ex = parse_input_a(example_input)
+races_b_ex = parse_input_b(example_input)
+# print(example_input)
+print("Example Output A: ", part_a(races_a_ex), " Solution: ", part_a_example_solution)
+print("Example Output B: ", part_b(races_b_ex), " Solution: ", part_b_example_solution)
+print("Part A: ", part_a(races_a))
+print("Part B: ", part_b(races_b))

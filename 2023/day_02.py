@@ -58,5 +58,8 @@ def part_b(input_data):
     return power_sum
 
 
-print(part_a(puzzle_data))
-print(part_b(puzzle_data))
+# print(example_input)
+print("Example Output A: ", part_a(example_input), " Solution: ", part_a_example_solution)
+print("Example Output B: ", part_b(example_input), " Solution: ", part_b_example_solution)
+print("Part A: ", part_a(puzzle_data))
+print("Part B: ", part_b(puzzle_data))

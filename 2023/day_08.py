@@ -12,8 +12,8 @@ examples = puzzle.examples
 example_input = examples[0].input_data
 example_input_2 = examples[1].input_data
 example_input_3 = examples[2].input_data
-part_a_example_solution = examples[0].answer_a
-part_b_example_solution = examples[0].answer_b
+part_a_example_solution = examples[1].answer_a
+part_b_example_solution = examples[2].answer_b
 
 
 def parse_input(input_data):
@@ -61,7 +61,7 @@ def part_b(input_data):
 
 # print(example_input_3)
 # print(parse_input(example_input))
-print("Example Output A: ", part_a(example_input_2))
-print("Example Output B: ", part_b(example_input_3))
+print("Example Output A: ", part_a(example_input_2), " Solution: ", part_a_example_solution)
+print("Example Output B: ", part_b(example_input_3), " Solution: ", part_b_example_solution)
 print("Part A: ", part_a(puzzle_data))
 print("Part B: ", part_b(puzzle_data))

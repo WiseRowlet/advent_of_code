@@ -14,8 +14,8 @@ example_input_3 = examples[2].input_data
 example_input_4 = examples[3].input_data
 example_input_5 = examples[4].input_data
 example_input_6 = examples[5].input_data
-part_a_example_solution = examples[0].answer_a
-part_b_example_solution = examples[0].answer_b
+part_a_example_solution = examples[1].answer_a
+part_b_example_solution = examples[4].answer_b
 
 
 def parse_input(input_data):
@@ -142,7 +142,7 @@ def part_b(input_data):
 
 # print(example_input_5)
 # print(parse_input(example_input))
-print("Example Output A: ", part_a(example_input_2))
-print("Example Output B: ", part_b(example_input_5))
+print("Example Output A: ", part_a(example_input_2), " Solution: ", part_a_example_solution)
+print("Example Output B: ", part_b(example_input_5), " Solution: ", part_b_example_solution)
 print("Part A: ", part_a(puzzle_data))
 print("Part B: ", part_b(puzzle_data))

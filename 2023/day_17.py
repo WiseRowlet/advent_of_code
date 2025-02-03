@@ -1,5 +1,6 @@
-from aocd import get_puzzle
 import heapq
+
+from aocd import get_puzzle
 
 DAY = 17
 YEAR = 2023
@@ -11,20 +12,21 @@ example_input = examples[0].input_data
 part_a_example_solution = examples[0].answer_a
 part_b_example_solution = examples[0].answer_b
 
+
 def parse_input(input_data):
     return input_data.splitlines()
 
-def part_a(input_data, min_con = 1, max_con = 3):
+
+def part_a(input_data, min_con=1, max_con=3):
     grid = parse_input(input_data)
     height = len(grid)
     width = len(grid[0])
     directions = [(1, 0), (0, 1), (-1, 0), (0, -1)]
-    start = (0,0,0)
+    start = (0, 0, 0)
     end = (width - 1, height - 1)
     pq = []
     heapq.heappush(pq, (0, start[0], start[1], start[2], 0))
     visited = set()
-
 
     while pq:
         score, x, y, direction, con = heapq.heappop(pq)
