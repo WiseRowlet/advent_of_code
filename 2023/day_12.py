@@ -1,4 +1,3 @@
-from collections import deque
 from functools import cache
 
 from aocd import get_puzzle
