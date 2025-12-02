@@ -15,6 +15,7 @@ if len(examples) > 1:
 example_input_b = examples[part_b_index].input_data
 part_b_example_solution = examples[part_b_index].answer_b
 
+# puzzle input parser
 def parse_input(input_data):
     return [line for line in input_data.splitlines()]
 
