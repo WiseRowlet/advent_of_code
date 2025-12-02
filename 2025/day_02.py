@@ -64,7 +64,7 @@ def get_repeating_pattern(s: str):
     n = len(s)
     for size in range(1, n // 2 + 1):
         if n % size != 0:
-            continue  # pattern of this size can't tile the whole string
+            continue
         pattern = s[:size]
         if pattern * (n // size) == s:
             return pattern, n // size
