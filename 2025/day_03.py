@@ -20,7 +20,6 @@ def parse_input(input_data):
     return [line for line in input_data.splitlines()]
 
 # puzzle imports
-from math import floor
 
 # puzzle solutions
 def part_a(input_data, xm: int = 2):
